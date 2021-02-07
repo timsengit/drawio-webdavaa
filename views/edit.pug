@@ -1,0 +1,18 @@
+doctype html
+//https://pug.bootcss.com/api/getting-started.html
+
+html
+    head
+        block head
+            script(src='edit.js')
+            link(href='edit.css' type='text/css' rel='stylesheet')
+
+    body
+        h1
+          a(href='/list') 文件列表
+        p(id="fileName" hidden=true title=fileName)
+        table(id='wrapper')
+            tr
+                td
+                    img(id="image" style="max-width:100%;cursor:pointer;" onclick="editDiagram(this);"
+                    src=imageData)
