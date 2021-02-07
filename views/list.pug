@@ -9,8 +9,7 @@ html
     body
         p(id="fileName" hidden=true title=fileName)
         h1(id="count" title=count ) 文件个数：#{count}
-        input(id="newFileName" placeholder="请输入新增的文件名" onblur="setNewFileName(this);") 请输入新增的文件名
-        
+        input(id="newFileName" placeholder="请输入新增的文件名" onblur="setNewFileName(this);")
         a(id="newFileNameButton") 点击新增文件
         ul
           each val in fileList.length ? fileList : ['没有内容']
